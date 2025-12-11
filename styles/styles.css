@@ -1,0 +1,231 @@
+*{
+      font-family: "Merriweather", serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #9dd9ef;
+    --secondary-color: #b8eacd;
+    --accent-color: #f4f1de;
+    --text-color: #333333;
+    --background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* estilos header */
+
+.header{
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 0.6rem 4rem;
+  position:static;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+    width: 7rem;
+}
+
+.header-p{
+    color: #000000;
+}
+
+/* estilos hero */
+
+.hero-section {
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.7) 40%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("../assets/img/entrada.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 42rem;
+  padding: 4rem;
+  padding-top: 2.5rem;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;}
+
+
+.h1-hero{
+    color: #000000;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 2.5rem;
+}
+
+.h1-hero span{
+    color: #e31515;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 2.5rem;
+}
+
+.p-hero{
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  max-width: 600px; 
+}
+
+/* estilos botones */
+
+.hero-btn{
+    background-color: #d5ccbe00;
+    color: #000000;
+    font-weight: bold;
+    font: 2em;
+    padding: 0.5rem 0.8rem;
+    border:#000000 1.3px solid;
+    border-radius: 20px;
+}
+
+.hero-section button{
+    display: inline-block;
+    margin-right: 1rem;
+    vertical-align: middle;
+
+}
+/* estilos section */
+
+.img-atardecer{
+    object-fit: contain;
+    width: 20%;
+    padding: 4rem;
+
+}
+
+.img-paisaje{
+    object-fit: contain;
+    width: 20%;
+}
+
+.section{
+    background-color: #b8ceea88;
+    padding: 4rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.h2-section{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.icon{
+    object-fit: contain;
+    width: 20%;
+    padding: 4rem;
+
+}
+
+.img-visit{
+    object-fit: contain;
+    width: 20%;
+}
+
+.bookroom{
+    background-color: #d5ccbe00;
+    color: #000000;
+    font-weight: bold;
+    font: 2em;
+    width: 10rem;
+    height: 2rem;
+    border:#000000 1.3px solid;
+    border-radius: 20px;
+}
+
+.visit-section{
+    padding: 4rem;
+}
+
+.contact-section{
+    padding: 4rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.loc-section{
+    padding: 4rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* estilos main */
+.main{
+    padding: 4rem; 
+}
+
+.main-product-1, .main-product-2, .main-product-3{
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding: 4rem;
+}
+
+.h2-main{
+    margin-bottom: 2rem;
+    margin-top: 2em;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.ourstory-main{
+    padding: 4rem; 
+}
+
+/* estilos footer */
+
+.index-footer{
+    background-color: #b8ceea88;
+    padding: 4rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.logo-ig{
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.logo-lk{
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.p-footer {
+    text-align: right;
+}
+
+.aboutUs-footer{
+    background-color: #b8ceea88;
+    padding: 4rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
