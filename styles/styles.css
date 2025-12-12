@@ -6,16 +6,17 @@
 }
 
 :root {
-    --primary-color: #9dd9ef;
-    --secondary-color: #b8eacd;
-    --accent-color: #f4f1de;
-    --text-color: #333333;
-    --background-color: #ffffff;
+    --primary-color: #dce2ee;
+    --secondary-color: #b6d4bb;
+    --deco-color: #89a46f;
+    --text-color: #302f1a;
+    --background-color: #fbf9f6;
+    --colornegro: #000000;
 }
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: var(--colornegro);
 }
 
 ul {
@@ -27,13 +28,14 @@ ul {
     padding: 0;
 }
 
+
 /* Navbar styles */
 .navbar.navbar-expand-lg {
-    background-color: #ffffff;
+    background-color: var(--background-color);
 }
 
 .nav-link {
-    color: #000000;
+    color: var(--colornegro);
  }
 
 .container-fluid {
@@ -44,14 +46,19 @@ ul {
     width: 7rem;
 }
 
-/* estilos header */
+.navbar {
+    margin: 0;
+    z-index: 10;
+}
 
-.header {
+/* estilos header index */
+
+.index-header {
   background: linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0.7) 40%,
-      rgba(255, 255, 255, 0) 100%
+      rgba(251, 249, 246, 0.9) 0%,
+      rgba(251, 249, 246, 0.7) 40%,
+      rgba(251, 249, 246, 0) 100%
     ),
     url("../assets/img/entrada.JPG");
   background-repeat: no-repeat;
@@ -59,26 +66,25 @@ ul {
   background-position: center;
   min-height: 42rem;
   padding: 4rem;
-  padding-top: 2.5rem;
+  padding-top: 12rem;
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #000;}
+  color: var(--colornegro);}
 
 
 .h1-header{
-    color: #000000;
+    font-family: "Eagle Lake", serif;
+    color: var(--deco-color);
     font-size: 3rem;
     margin-bottom: 5rem;
     margin-top: 2.5rem;
+    text-shadow: #302f1a 1px 1px 2px;
 }
 
-.h1-header span{
-    color: #000000;
-    font-size: 3rem;
-    margin-bottom: 5rem;
-    margin-top: 2.5rem;
+.h1-header-specialfont {
+    font-family: "Geostar";
 }
 
 .p-header{
@@ -88,37 +94,51 @@ ul {
   max-width: 600px; 
 }
 
+/* Estilo carrusel - header - experiences & events */
+
+.experiences-header .carousel-item {
+    height: 80vh; /* altura en escritorio */
+}
+
+.experiences-header .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
 /* estilos botones */
 
 .header-btn.learn{
-    background-color: #000000;
-    color: #ffffff; 
+    background-color: var(--text-color);
+    color: var(--background-color); 
     font-weight: bold;
     font: 2em;
     padding: 0.5rem 0.8rem;
-    border:#000000 1.3px solid;
+    border: var(--text-color) 1.3px solid;
     border-radius: 20px;
 }
 
 .header-btn.book{
     background-color: #d5ccbe00;
-    color: #000000;
+    color: var(--text-color);
     font-weight: bold;
     font: 2em;
     padding: 0.5rem 0.8rem;
-    border:#000000 1.3px solid;
+    border: var(--text-color) 1.3px solid;
     border-radius: 20px;
 }
 
-.header button{
+.index-header button{
     display: inline-block;
     margin-right: 1rem;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     vertical-align: middle;
 
 }
 
-/* estilos section */
+/* estilos section index*/
 
 .img-atardecer{
     object-fit: contain;
@@ -185,32 +205,68 @@ ul {
     font-size: 0.9rem;
 }
 
-/* estilos main */
-.main{
-    padding: 4rem; 
-}
-
-.main-product-1, .main-product-2, .main-product-3{
-    margin-bottom: 1rem;
-    padding-top: 1rem;
+.aboutus-section{
     padding: 4rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
 }
 
-.h2-main{
-    margin-bottom: 2rem;
-    margin-top: 2em;
+/* estilos cards main */
+.card-img-top{ 
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0; /* redondea solo arriba, queda prolijo */
+}
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--deco-color);
+    box-shadow: 0 2px 8px var(--text-color);
+    width: 45rem;
+    background-color: var(--background-color);
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5rem;
+}
+
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--deco-color);
+    text-align: center;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+/* estilos main */
+.index-main{
+    padding: 4rem; 
+    background-color: var(--background-color);
+}
+
+.h2-index-main{
     font-size: 2rem;
     text-align: center;
 }
 
-.ourstory-main{
+.aboutUs-main{
     padding: 4rem; 
 }
 
 /* estilos footer */
 
 .index-footer{
-    background-color: #b8ceea88;
+    background-color: var(--primary-color);
     padding: 4rem;
     margin-top: 2rem;
     font-size: 0.9rem;
