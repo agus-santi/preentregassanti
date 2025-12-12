@@ -27,31 +27,26 @@ ul {
     padding: 0;
 }
 
-/* estilos header */
-
-.header{
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  padding: 0.6rem 4rem;
-  position:static;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Navbar styles */
+.navbar.navbar-expand-lg {
+    background-color: #ffffff;
 }
 
-.logo {
+.nav-link {
+    color: #000000;
+ }
+
+.container-fluid {
+    padding: 9.6px 64px;
+}
+
+.navbar-brand img {
     width: 7rem;
 }
 
-.header-p{
-    color: #000000;
-}
+/* estilos header */
 
-/* estilos hero */
-
-.hero-section {
+.header {
   background: linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.9) 0%,
@@ -72,21 +67,21 @@ ul {
   color: #000;}
 
 
-.h1-hero{
+.h1-header{
     color: #000000;
     font-size: 3rem;
     margin-bottom: 5rem;
     margin-top: 2.5rem;
 }
 
-.h1-hero span{
-    color: #e31515;
+.h1-header span{
+    color: #000000;
     font-size: 3rem;
     margin-bottom: 5rem;
     margin-top: 2.5rem;
 }
 
-.p-hero{
+.p-header{
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 3rem;
@@ -95,7 +90,17 @@ ul {
 
 /* estilos botones */
 
-.hero-btn{
+.header-btn.learn{
+    background-color: #000000;
+    color: #ffffff; 
+    font-weight: bold;
+    font: 2em;
+    padding: 0.5rem 0.8rem;
+    border:#000000 1.3px solid;
+    border-radius: 20px;
+}
+
+.header-btn.book{
     background-color: #d5ccbe00;
     color: #000000;
     font-weight: bold;
@@ -105,12 +110,14 @@ ul {
     border-radius: 20px;
 }
 
-.hero-section button{
+.header button{
     display: inline-block;
     margin-right: 1rem;
+    margin-left: 2rem;
     vertical-align: middle;
 
 }
+
 /* estilos section */
 
 .img-atardecer{
