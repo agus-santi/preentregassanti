@@ -1,5 +1,5 @@
 # Dragonfly Inn
-Website created as a final project using HTML, CSS, and Bootstrap.
+Website created as a project using HTML, CSS, and Bootstrap.
 
 ## Technologies
 - HTML5
