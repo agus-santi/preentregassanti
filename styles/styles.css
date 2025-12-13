@@ -97,7 +97,7 @@ ul {
 /* Estilo carrusel - header - experiences & events */
 
 .experiences-header .carousel-item {
-    height: 80vh; /* altura en escritorio */
+    height: 80vh; 
 }
 
 .experiences-header .carousel-item img {
@@ -106,6 +106,9 @@ ul {
     object-fit: cover;
 }
 
+.experiences-header {
+    padding-top: 8rem;
+}
 
 
 /* estilos botones */
@@ -159,7 +162,7 @@ ul {
     font-size: 0.9rem;
 }
 
-.h2-section{
+.h2-aboutUs-section{
     margin-bottom: 2rem;
     margin-top: 2rem;
     font-size: 2rem;
@@ -211,7 +214,7 @@ ul {
     font-size: 0.9rem;
 }
 
-/* estilos cards main */
+/* estilos cards main index */
 .card-img-top{ 
     height: 240px;
     width: 100%;
@@ -248,6 +251,18 @@ ul {
     text-align: justify;
 }
 
+/* estilos cards main About Us */
+.abotUs-header-card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--deco-color);
+    box-shadow: 0 2px 8px var(--text-color);
+    background-color: #fbf9f697;
+    padding: 2rem;
+    margin-top: 4rem;
+    text-align: justify;
+}
+
 /* estilos main */
 .index-main{
     padding: 4rem; 
@@ -261,6 +276,117 @@ ul {
 
 .aboutUs-main{
     padding: 4rem; 
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.experiences-main {
+    background-color: var(--background-color);
+    padding-top: 4rem;
+}
+
+/* estilos header About Us */
+.aboutUs-header {
+  background: linear-gradient(
+      90deg,
+      rgba(251, 249, 246, 0.9) 0%,
+      rgba(251, 249, 246, 0.7) 40%,
+      rgba(251, 249, 246, 0) 100%
+    ),
+    url("../assets/img/paisaje.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 42rem;
+  padding: 4rem;
+  padding-top: 12rem;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--colornegro);}
+
+
+.h2-aboutUs-header{
+    font-family: "Eagle Lake", serif;
+    color: var(--deco-color);
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 2.5rem;
+    text-shadow: #302f1a 1px 1px 2px;
+}
+
+/* estilos About us main values*/
+.aboutUs-main-values{
+    background-color: var(--background-color);
+    padding: 4rem;
+}
+
+.value-card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--deco-color);
+    box-shadow: 0 2px 8px var(--text-color);
+    background-color: var(--background-color);
+    padding: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+    width: 20rem;
+}
+
+.h2-aboutUs-main{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+/* estilos book your room header */
+.book-header {
+    background: linear-gradient(
+      90deg,
+      rgba(251, 249, 246, 0.9) 0%,
+      rgba(251, 249, 246, 0.7) 40%,
+      rgba(251, 249, 246, 0) 100%
+    ), url("../assets/img/atardecer.jpeg");
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 42rem;
+  padding: 4rem;
+  padding-top: 12rem;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--colornegro);
+}
+
+.h2-book-header{
+    font-family: "Eagle Lake", serif;
+    color: var(--deco-color);
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 2.5rem;
+    text-shadow: #302f1a 1px 1px 2px;
+}
+
+/* estilos book your room main */
+
+.h2-book-main {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container.my-5 {
+    background-color: var(--background-color);
 }
 
 /* estilos footer */

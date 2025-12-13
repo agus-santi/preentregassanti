@@ -4,66 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="head-title">Dragonfly Inn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geostar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">    
     <link rel="stylesheet" href="../styles/styles.css">
 
 </head>
 <body>
-    <header class="header"> 
-       
-        <img class="logo" src="../assets/img/dinn-blacklogo.png" alt="blacklogo">
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./aboutUs.html">About Us</a></li>
-                <li><a href="./experiencesEvents.html">Experiences & Events</a></li>
-                <li><a href="./bookYourRoom.html">Book Your Room</a></li>
-                <li><a href="./contactUs.html">Contact Us</a></li>
-            </ul>
-        </nav>
+  <nav class="navbar navbar-expand-lg position-fixed w-100">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> <img src="../assets/img/dinn-blacklogo.png" alt="navbar logo"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./aboutUs.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./experiencesEvents.html">Experiences & Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./bookYourRoom.html">Book Your Room</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contactUs.html">Contact Us</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  </nav>
+
+    <header class="book-header"> 
+      <h2 class="h2-book-header">Book Your Room</h2>
     </header>
 
-    <section class="hero-section">
-    </section>
+<main class="container my-5">
+  <h2 class="h2-book-main text-center mb-4">Complete the form</h2>
 
-    <main class="bookroomform-main">
-        <h2>Complete the form</h2>
-    </main>
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-8">
 
-    <section>
-         <h2 class="h2-main">Choose your room</h2>
+      <form class="p-4 shadow rounded">
 
-        <article class="main-product-1" >
-            <h3>Lorem, ipsum dolor.</h3>
+        <div class="row">
 
-            <img class="img-atardecer" src="../assets/img/atardecer.jpeg" alt="sunset">
-    
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, suscipit?</p>
-            <button><a href="./pages/bookYourRoom.html">Choose</a></button>
-        </article>
+          <!-- COLUMNA IZQUIERDA -->
+          <div class="col-12 col-md-6">
 
-        <article class="main-product-2">
-            <h3>Lorem, ipsum dolor.</h3>
+            <div class="mb-3">
+              <label for="date" class="form-label">Select your date</label>
+              <input type="date" class="form-control" id="date" required>
+            </div>
 
-            <img class="img-atardecer" src="../assets/img/atardecer.jpeg" alt="sunset">
-    
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, suscipit?</p>
-            <button><a href="./pages/bookYourRoom.html">Choose</a></button>
-        </article>
+            <div class="mb-3">
+              <label for="guests" class="form-label">How many guests?</label>
+              <input type="number" class="form-control" id="guests" min="1" max="10" required>
+            </div>
 
-        <article class="main-product-3">
-            <h3>Lorem, ipsum dolor.</h3>
+            <div class="mb-3">
+              <label for="roomType" class="form-label">Choose your room</label>
+              <select class="form-select" id="roomType" required>
+                <option selected disabled>Select a room</option>
+                <option>Country View Room</option>
+                <option>Ocean View Room</option>
+                <option>Garden Retreat Room</option>
+              </select>
+            </div>
 
-            <img class="img-atardecer" src="../assets/img/atardecer.jpeg" alt="sunset">
-    
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, suscipit?</p>
-            <button><a href="./pages/bookYourRoom.html">Choose</a></button>
+          </div>
 
-        </article>
-    </section>
+          <!-- COLUMNA DERECHA -->
+          <div class="col-12 col-md-6">
+
+            <div class="mb-3">
+              <label for="fullname" class="form-label">Full name</label>
+              <input type="text" class="form-control" id="fullname" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="experience" class="form-label">Select an experience (optional)</label>
+              <select class="form-select" id="experience">
+                <option selected disabled>Select an experience</option>
+                <option>Wedding</option>
+                <option>Picnic Day</option>
+                <option>Team Building</option>
+                <option>No experience</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- BOTÓN -->
+          <div class="col-12 mt-3">
+            <button type="submit" class="btn btn-dark w-100 py-2">
+              Book Now
+            </button>
+          </div>
+
+        </div>
+      </form>
+
+    </div>
+  </div>
+</main>
 
     <footer class="index-footer">
         <a href="https://www.instagram.com/agus._santi/" target="_blank"><img class="logo-ig" src="../assets/img/instgramlogo.png" alt="instagram logo">
@@ -72,4 +136,6 @@
         <p class="p-footer">All rigths reserved &copy; | Dragonfly Inn</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+</html> 
