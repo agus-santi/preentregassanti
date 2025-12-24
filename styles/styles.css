@@ -1,61 +1,52 @@
 /* ===== Reset y variables: sin cambios ===== */
 * {
-    font-family: "Merriweather", serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Merriweather", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --primary-color: #dce2ee;
-    --secondary-color: #b6d4bb;
-    --deco-color: #89a46f;
-    --text-color: #302f1a;
-    --background-color: #fbf9f6;
-    --colornegro: #000000;
+  --primary-color: #dce2ee;
+  --secondary-color: #b6d4bb;
+  --deco-color: #89a46f;
+  --text-color: #302f1a;
+  --background-color: #fbf9f6;
+  --colornegro: #000000;
 }
 
 /* ===== Estilos generales ===== */
 a {
-    text-decoration: none;
-    color: var(--colornegro);
+  text-decoration: none;
+  color: var(--colornegro);
 }
 
 .custom-list {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 /* Navbar */
 .navbar.navbar-expand-lg {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 .nav-link {
-    color: var(--colornegro);
+  color: var(--colornegro);
 }
 
 .container-fluid {
-    padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .navbar-brand img {
-    width: 7rem;
+  width: 7rem;
 }
 
-
-
 /* estilos header index */
-
 .index-header {
-  background: linear-gradient(
-      90deg,
-      rgba(251, 249, 246, 0.9) 0%,
-      rgba(251, 249, 246, 0.7) 40%,
-      rgba(251, 249, 246, 0) 100%
-    ),
-    url("../assets/img/entrada.JPG");
+  background: linear-gradient(90deg, rgba(251, 249, 246, 0.9) 0%, rgba(251, 249, 246, 0.7) 40%, rgba(251, 249, 246, 0) 100%), url("../assets/img/entrada.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -65,283 +56,204 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--colornegro);}
+  color: var(--colornegro);
+}
 
-
-.h1-header{
-    font-family: "Eagle Lake", serif;
-    color: var(--deco-color);
-    font-size: 3rem;
-    margin-bottom: 5rem;
-    margin-top: 2.5rem;
-    text-shadow: #302f1a 1px 1px 2px;
+.h1-header {
+  font-family: "Eagle Lake", serif;
+  color: var(--deco-color);
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 2.5rem;
+  text-shadow: #302f1a 1px 1px 2px;
 }
 
 .h1-header-specialfont {
-    font-family: "Geostar";
+  font-family: "Geostar";
 }
 
-.p-header{
+.p-header {
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 3rem;
-  max-width: 600px; 
+  max-width: 600px;
 }
 
 /* Estilo carrusel - header - experiences & events */
-
 .experiences-header .carousel-item {
-    height: 80vh; 
+  height: 80vh;
 }
 
 .experiences-header .carousel-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-
 
 /* estilos botones */
-
-.header-btn.learn{
-    background-color: var(--text-color);
-    color: var(--background-color); 
-    font-weight: bold;
-    font: 2em;
-    padding: 0.5rem 0.8rem;
-    border: var(--text-color) 1.3px solid;
-    border-radius: 20px;
-    text-align: center;
+.header-btn.learn {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  font-weight: bold;
+  font: 2em;
+  padding: 0.5rem 0.8rem;
+  border: var(--text-color) 1.3px solid;
+  border-radius: 20px;
+  text-align: center;
 }
 
-.header-btn.book{
-    background-color: #d5ccbe00;
-    color: var(--text-color);
-    font-weight: bold;
-    font: 2em;
-    padding: 0.5rem 0.8rem;
-    border: var(--text-color) 1.3px solid;
-    border-radius: 20px;
+.header-btn.book {
+  background-color: rgba(213, 204, 190, 0);
+  color: var(--text-color);
+  font-weight: bold;
+  font: 2em;
+  padding: 0.5rem 0.8rem;
+  border: var(--text-color) 1.3px solid;
+  border-radius: 20px;
 }
 
-.index-header button{
-    display: inline-block;
-    vertical-align: middle;
-
+.index-header button {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.hero-buttons{
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
 }
-
 
 /* estilos section index*/
-
-.img-atardecer{
-    object-fit: contain;
-    width: 20%;
-    padding: 4rem;
-
+.img-atardecer {
+  object-fit: contain;
+  width: 20%;
+  padding: 4rem;
 }
 
-.img-paisaje{
-    object-fit: contain;
-    width: 20%;
+.img-paisaje {
+  object-fit: contain;
+  width: 20%;
 }
 
-.section{
-    background-color: #b8ceea88;
-    padding: 4rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
+.section {
+  background-color: rgba(184, 206, 234, 0.5333333333);
+  padding: 4rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
-.h2-aboutUs-section{
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    font-size: 2rem;
-    text-align: center;
+.h2-aboutUs-section {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.icon{
-    object-fit: contain;
-    width: 20%;
-    padding: 4rem;
-
+.icon {
+  object-fit: contain;
+  width: 20%;
+  padding: 4rem;
 }
 
-.img-visit{
-    object-fit: contain;
-    width: 20%;
+.img-visit {
+  object-fit: contain;
+  width: 20%;
 }
 
-.bookroom{
-    background-color: #d5ccbe00;
-    color: #000000;
-    font-weight: bold;
-    font: 2em;
-    width: 10rem;
-    height: 2rem;
-    border:#000000 1.3px solid;
-    border-radius: 20px;
+.bookroom {
+  background-color: rgba(213, 204, 190, 0);
+  color: #000000;
+  font-weight: bold;
+  font: 2em;
+  width: 10rem;
+  height: 2rem;
+  border: #000000 1.3px solid;
+  border-radius: 20px;
 }
 
-
-.aboutus-section{
-    padding: 4rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
+.aboutus-section {
+  padding: 4rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
 /* estilos cards main index */
-.card-img-top{ 
-    height: 240px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 12px 12px 0 0; 
+.card-img-top {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
 }
 
 .card {
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--deco-color);
-    box-shadow: 0 2px 8px var(--text-color);
-    width: 100%;
-    max-width: 45rem;
-    background-color: var(--background-color);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--deco-color);
+  box-shadow: 0 2px 8px var(--text-color);
+  width: 100%;
+  max-width: 45rem;
+  background-color: var(--background-color);
 }
 
 .cards-container {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    flex-wrap: wrap;
-    padding: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  padding: 5rem;
 }
-
 
 .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: var(--deco-color);
-    text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--deco-color);
+  text-align: center;
 }
 
-.card-text{
-    text-align: justify;
+.card-text {
+  text-align: justify;
 }
 
 /* estilos cards main About Us */
 .abotUs-header-card {
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--deco-color);
-    box-shadow: 0 2px 8px var(--text-color);
-    background-color: #fbf9f697;
-    padding: 2rem;
-    margin-top: 4rem;
-    text-align: justify;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--deco-color);
+  box-shadow: 0 2px 8px var(--text-color);
+  background-color: rgba(251, 249, 246, 0.5921568627);
+  padding: 2rem;
+  margin-top: 4rem;
+  text-align: justify;
 }
 
 /* estilos main */
-.index-main{
-    padding: 4rem; 
-    background-color: var(--background-color);
+.index-main {
+  padding: 4rem;
+  background-color: var(--background-color);
 }
 
-.h2-index-main{
-    font-size: 2rem;
-    text-align: center;
+.h2-index-main {
+  font-size: 2rem;
+  text-align: center;
 }
 
-.aboutUs-main{
-    padding: 4rem; 
-    text-align: center;
-    background-color: var(--background-color);
+.aboutUs-main {
+  padding: 4rem;
+  text-align: center;
+  background-color: var(--background-color);
 }
 
 .experiences-main {
-    background-color: var(--background-color);
-    padding-top: 4rem;
-    padding-inline: 1rem;
+  background-color: var(--background-color);
+  padding-top: 4rem;
+  padding-inline: 1rem;
 }
 
 /* estilos header About Us */
 .aboutUs-header {
-  background: linear-gradient(
-      90deg,
-      rgba(251, 249, 246, 0.9) 0%,
-      rgba(251, 249, 246, 0.7) 40%,
-      rgba(251, 249, 246, 0) 100%
-    ),
-    url("../assets/img/paisaje.JPG");
+  background: linear-gradient(90deg, rgba(251, 249, 246, 0.9) 0%, rgba(251, 249, 246, 0.7) 40%, rgba(251, 249, 246, 0) 100%), url("../assets/img/paisaje.JPG");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 42rem;
-  padding: 4rem;
-  padding-top: 6rem;
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: var(--colornegro);}
-
-
-.h2-aboutUs-header{
-    font-family: "Eagle Lake", serif;
-    color: var(--deco-color);
-    font-size: 3rem;
-    margin-bottom: 5rem;
-    margin-top: 2.5rem;
-    text-shadow: #302f1a 1px 1px 2px;
-}
-
-/* estilos About us main values*/
-.aboutus-section, .aboutUs-main-values, .visit-section, .contact-section, .loc-section {
-    padding: 4rem 2rem;
-    margin-top: 2rem;
-}
-
-.value-card {
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--deco-color);
-    box-shadow: 0 2px 8px var(--text-color);
-    background-color: var(--background-color);
-    padding: 2rem;
-    margin-top: 4rem;
-    text-align: center;
-    width: 100%;
-    max-width: 20rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.h2-aboutUs-main{
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.col {
-    display: flex;
-    justify-content: center;
-}
-
-/* estilos book your room header */
-.book-header {
-    background: linear-gradient(
-      90deg,
-      rgba(251, 249, 246, 0.9) 0%,
-      rgba(251, 249, 246, 0.7) 40%,
-      rgba(251, 249, 246, 0) 100%
-    ), url("../assets/img/atardecer.jpeg");
-    background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 42rem;
@@ -354,150 +266,202 @@ a {
   color: var(--colornegro);
 }
 
-.h2-book-header{
-    font-family: "Eagle Lake", serif;
-    color: var(--deco-color);
-    font-size: 3rem;
-    margin-bottom: 5rem;
-    margin-top: 2.5rem;
-    text-shadow: #302f1a 1px 1px 2px;
+.h2-aboutUs-header {
+  font-family: "Eagle Lake", serif;
+  color: var(--deco-color);
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 2.5rem;
+  text-shadow: #302f1a 1px 1px 2px;
+}
+
+/* estilos About us main values*/
+.aboutus-section, .aboutUs-main-values, .visit-section, .contact-section, .loc-section {
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.value-card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--deco-color);
+  box-shadow: 0 2px 8px var(--text-color);
+  background-color: var(--background-color);
+  padding: 2rem;
+  margin-top: 4rem;
+  text-align: center;
+  width: 100%;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h2-aboutUs-main {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+/* estilos book your room header */
+.book-header {
+  background: linear-gradient(90deg, rgba(251, 249, 246, 0.9) 0%, rgba(251, 249, 246, 0.7) 40%, rgba(251, 249, 246, 0) 100%), url("../assets/img/atardecer.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 42rem;
+  padding: 4rem;
+  padding-top: 6rem;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--colornegro);
+}
+
+.h2-book-header {
+  font-family: "Eagle Lake", serif;
+  color: var(--deco-color);
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 2.5rem;
+  text-shadow: #302f1a 1px 1px 2px;
 }
 
 /* estilos book your room main */
-
 .h2-book-main {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    font-size: 2rem;
-    text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .container.my-5 {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 /* estilos footer */
-
-.index-footer{
-    background-color: var(--primary-color);
-    padding: 4rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
+.index-footer {
+  background-color: var(--primary-color);
+  padding: 4rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
-.logo-ig{
-    width: 2.5rem;
-    margin-right: 1rem;
+.logo-ig {
+  width: 2.5rem;
+  margin-right: 1rem;
 }
 
-.logo-lk{
-    width: 2.5rem;
-    margin-right: 1rem;
+.logo-lk {
+  width: 2.5rem;
+  margin-right: 1rem;
 }
 
 .p-footer {
-    text-align: right;
+  text-align: right;
 }
 
-.aboutUs-footer{
-    background-color: #b8ceea88;
-    padding: 4rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
+.aboutUs-footer {
+  background-color: rgba(184, 206, 234, 0.5333333333);
+  padding: 4rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
-footer{
-    padding: 2rem 0;
-    text-align: center;
+footer {
+  padding: 2rem 0;
+  text-align: center;
 }
 
 /* responsive */
 @media (max-width: 1024px) {
-    .container-fluid {
-        padding: 9.6px 32px;
-    }
-    .cards-container {
-        gap: 2rem;
-        padding: 3rem;
-    }
+  .container-fluid {
+    padding: 9.6px 32px;
+  }
+  .cards-container {
+    gap: 2rem;
+    padding: 3rem;
+  }
 }
-
 @media (min-width: 992px) {
-    .container-fluid {
-        padding: 0.6rem 4rem;
-    }
+  .container-fluid {
+    padding: 0.6rem 4rem;
+  }
 }
-
 @media (max-width: 992px) {
-    .h1-header {
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
-    }
-    .p-header {
-        font-size: 1rem;
-        max-width: 100%;
-    }
-    .cards-container {
-        flex-direction: column;
-        gap: 3rem;
-        padding: 2rem;
-    }
-    .navbar-brand img {
-        width: 6rem;
-    }
+  .h1-header {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .p-header {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  .cards-container {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+  }
+  .navbar-brand img {
+    width: 6rem;
+  }
 }
-
 @media (max-width: 768px) {
-    .h1-header {
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
-    }
-    .p-header {
-        font-size: 1rem;
-        max-width: 100%;
-    }
-    .cards-container {
-        flex-direction: column;
-        gap: 3rem;
-        padding: 2rem;
-    }
-    .navbar-brand img {
-        width: 6rem;
-    }
+  .h1-header {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .p-header {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  .cards-container {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+  }
+  .navbar-brand img {
+    width: 6rem;
+  }
 }
-
 @media (max-width: 576px) {
-    .h1-header {
-        font-size: 1.8rem;
-        margin-bottom: 2rem;
-    }
-    .p-header {
-        font-size: 0.9rem;
-    }
-    .card-img-top {
-        height: 180px;
-    }
-    .navbar-brand img {
-        width: 5rem;
-    }
-    .header-btn.learn,
-    .header-btn.book,
-    .bookroom {
-        width: 100%;
-        font-size: 0.9rem;
-        padding: 0.5rem;
-        margin-bottom: 1rem;
-    }
+  .h1-header {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .p-header {
+    font-size: 0.9rem;
+  }
+  .card-img-top {
+    height: 180px;
+  }
+  .navbar-brand img {
+    width: 5rem;
+  }
+  .header-btn.learn,
+  .header-btn.book,
+  .bookroom {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+  .hero-buttons button {
+    width: 100%;
+  }
 }
 
-@media (max-width: 576px){
-    .hero-buttons{
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0.8rem;
-    }
-
-    .hero-buttons button{
-        width: 100%;
-    }
-}
+/*# sourceMappingURL=styles.css.map */
