@@ -1,0 +1,38 @@
+@mixin hero-header ($image-url) {
+      background: linear-gradient(
+      90deg,
+      rgba(251, 249, 246, 0.9) 0%,
+      rgba(251, 249, 246, 0.7) 40%,
+      rgba(251, 249, 246, 0) 100%
+    ),
+    url($image-url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 42rem;
+  padding: 4rem;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $colornegro;
+}
+
+@mixin button-base ($bg, $color, $border-color) {
+    background-color: $bg;
+    color: $color;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    border: $border-color 1.3px solid;
+    border-radius: 20px;
+    text-align: center;
+}
+
+@mixin card-base ($bg: $background-color) {
+  background-color: $bg;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid $deco-color;
+  box-shadow: 0 2px 8px $text-color;
+}

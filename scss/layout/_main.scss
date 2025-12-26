@@ -1,0 +1,57 @@
+
+/* Main */
+.index-main{
+    padding: 4rem; 
+    background-color: $background-color;
+}
+
+.h2-index-main{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.aboutUs-main{
+    padding: 4rem; 
+    text-align: center;
+    background-color: $background-color;
+}
+
+.experiences-main {
+    background-color: $background-color;
+    padding-top: 4rem;
+    padding-inline: 1rem;
+}
+
+
+/* Main About Us - values */
+
+.aboutus-section, .aboutUs-main-values, .visit-section, .contact-section, .loc-section {
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+}
+
+.h2-aboutUs-main{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Main Book Your Room */
+
+.h2-book-main {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container.my-5 {
+    background-color: $background-color;
+}

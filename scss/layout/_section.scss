@@ -1,0 +1,91 @@
+/* Section index*/
+
+.img-atardecer{
+    object-fit: contain;
+    width: 20%;
+    padding: 4rem;
+
+}
+
+.img-paisaje{
+    object-fit: contain;
+    width: 20%;
+}
+
+.section{
+    background-color: #b8ceea88;
+    padding: 4rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Section About Us */
+
+.h2-aboutUs-section{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.icon{
+    object-fit: contain;
+    width: 20%;
+    padding: 4rem;
+
+}
+
+.img-visit{
+    object-fit: contain;
+    width: 20%;
+}
+
+.aboutus-section{
+    padding: 4rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.about-us {
+  img {
+    border-radius: 20px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+/* Section Book Your Room */
+.bookyourroom-section {
+    padding: 4rem; 
+    background-color: $background-color;
+}
+
+.h2-bookyourroom-section {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* Section location con mapa */
+.loc-section {
+  background-color: $background-color;
+  margin: 0; // 👈 importantísimo
+  padding: 0;
+
+  &__info {
+    padding: 3rem;
+  }
+
+  &__map {
+    width: 100%;
+    height: 100%;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 300px;
+      border: 0;
+      display: block;
+    }
+  }
+}

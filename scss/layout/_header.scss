@@ -1,0 +1,65 @@
+/* Header index */
+
+.index-header {
+    @include hero-header ("../assets/img/entrada.JPG");
+
+    .h1-header{
+        @extend %headerTitulo;
+
+        &-specialfont {
+            font-family: "Geostar";
+        }
+    }
+
+    .p-header{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    max-width: 600px; 
+    }
+}
+
+/* Header experiences & events - carrusel */
+
+.experiences-header {
+    .carousel-item {
+        height: 80vh; 
+
+        img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        }
+    }
+}
+
+/* Header About Us */
+
+.aboutUs-header {
+  @include hero-header ("../assets/img/paisaje.JPG");
+
+    .h2-aboutUs-header{
+        @extend %headerTitulo;
+    }
+}
+
+/* Header Contact Us */
+
+.contactUs-header {
+  @include hero-header ("../assets/img/paisaje.JPG");
+
+  .h2-contactUs-header{
+    @extend %headerTitulo;
+  }
+}
+
+/* Header Book Your Room */
+
+.book-header {
+    @include hero-header ("../assets/img/atardecer.jpeg");
+
+    .h2-book-header{
+     @extend %headerTitulo;
+    }
+}
+

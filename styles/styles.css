@@ -1,45 +1,15 @@
-/* ===== Reset y variables: sin cambios ===== */
-* {
-  font-family: "Merriweather", serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Utilities */
+.book-header .h2-book-header, .contactUs-header .h2-contactUs-header, .aboutUs-header .h2-aboutUs-header, .index-header .h1-header {
+  font-family: "Eagle Lake", serif;
+  color: #89a46f;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 2.5rem;
+  text-shadow: #302f1a 1px 1px 2px;
 }
 
-body {
-  background-color: #fbf9f6;
-}
-
-/* ===== Estilos generales ===== */
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.custom-list {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
-/* Navbar */
-.navbar.navbar-expand-lg {
-  background-color: #fbf9f6;
-}
-
-.nav-link {
-  color: #000000;
-}
-
-.container-fluid {
-  padding: 0.5rem 1rem;
-}
-
-.navbar-brand img {
-  width: 7rem;
-}
-
-/* estilos header index */
+/* Layout */
+/* Header index */
 .index-header {
   background: linear-gradient(90deg, rgba(251, 249, 246, 0.9) 0%, rgba(251, 249, 246, 0.7) 40%, rgba(251, 249, 246, 0) 100%), url("../assets/img/entrada.JPG");
   background-repeat: no-repeat;
@@ -53,72 +23,69 @@ a {
   justify-content: center;
   color: #000000;
 }
-
-.h1-header {
-  font-family: "Eagle Lake", serif;
-  color: #89a46f;
-  font-size: 3rem;
-  margin-bottom: 5rem;
-  margin-top: 2.5rem;
-  text-shadow: #302f1a 1px 1px 2px;
-}
-
-.h1-header-specialfont {
+.index-header .h1-header-specialfont {
   font-family: "Geostar";
 }
-
-.p-header {
+.index-header .p-header {
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 3rem;
   max-width: 600px;
 }
 
-/* Estilo carrusel - header - experiences & events */
+/* Header experiences & events - carrusel */
 .experiences-header .carousel-item {
   height: 80vh;
 }
-
 .experiences-header .carousel-item img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-/* estilos botones */
-.header-btn.learn {
-  background-color: #302f1a;
-  color: #fbf9f6;
-  font-weight: bold;
-  font: 2em;
-  padding: 0.5rem 0.8rem;
-  border: #302f1a 1.3px solid;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.header-btn.book {
-  background-color: rgba(213, 204, 190, 0);
-  color: #302f1a;
-  font-weight: bold;
-  font: 2em;
-  padding: 0.5rem 0.8rem;
-  border: #302f1a 1.3px solid;
-  border-radius: 20px;
-}
-
-.index-header button {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.hero-buttons {
+/* Header About Us */
+.aboutUs-header {
+  background: linear-gradient(90deg, rgba(251, 249, 246, 0.9) 0%, rgba(251, 249, 246, 0.7) 40%, rgba(251, 249, 246, 0) 100%), url("../assets/img/paisaje.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 42rem;
+  padding: 4rem;
+  padding-top: 6rem;
   display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
 }
-
-/* estilos section index*/
+/* Header Contact Us */
+.contactUs-header {
+  background: linear-gradient(90deg, rgba(251, 249, 246, 0.9) 0%, rgba(251, 249, 246, 0.7) 40%, rgba(251, 249, 246, 0) 100%), url("../assets/img/paisaje.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 42rem;
+  padding: 4rem;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+}
+/* Header Book Your Room */
+.book-header {
+  background: linear-gradient(90deg, rgba(251, 249, 246, 0.9) 0%, rgba(251, 249, 246, 0.7) 40%, rgba(251, 249, 246, 0) 100%), url("../assets/img/atardecer.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 42rem;
+  padding: 4rem;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+}
+/* Section index*/
 .img-atardecer {
   object-fit: contain;
   width: 20%;
@@ -137,6 +104,7 @@ a {
   font-size: 0.9rem;
 }
 
+/* Section About Us */
 .h2-aboutUs-section {
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -155,17 +123,6 @@ a {
   width: 20%;
 }
 
-.bookroom {
-  background-color: rgba(213, 204, 190, 0);
-  color: #000000;
-  font-weight: bold;
-  font: 2em;
-  width: 10rem;
-  height: 2rem;
-  border: #000000 1.3px solid;
-  border-radius: 20px;
-}
-
 .aboutus-section {
   padding: 4rem;
   margin-top: 2rem;
@@ -178,57 +135,71 @@ a {
   object-fit: cover;
 }
 
-/* estilos cards main index */
-.card-img-top {
-  height: 240px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
-}
-
-.card {
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid #89a46f;
-  box-shadow: 0 2px 8px #302f1a;
-  width: 100%;
-  max-width: 45rem;
+/* Section Book Your Room */
+.bookyourroom-section {
+  padding: 4rem;
   background-color: #fbf9f6;
 }
 
-.cards-container {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  flex-wrap: wrap;
-  padding: 5rem;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #89a46f;
+.h2-bookyourroom-section {
+  font-size: 2rem;
   text-align: center;
 }
 
-.card-text {
-  text-align: justify;
+/* Section location con mapa */
+.loc-section {
+  background-color: #fbf9f6;
+  margin: 0;
+  padding: 0;
+}
+.loc-section__info {
+  padding: 3rem;
+}
+.loc-section__map {
+  width: 100%;
+  height: 100%;
+}
+.loc-section__map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  border: 0;
+  display: block;
 }
 
-/* estilos cards main About Us */
-.abotUs-header-card {
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid #89a46f;
-  box-shadow: 0 2px 8px #302f1a;
-  background-color: rgba(251, 249, 246, 0.5921568627);
-  padding: 2rem;
-  margin-top: 4rem;
-  text-align: justify;
+/* Footer */
+.footer {
+  background: url("../assets/img/logo-footer.png");
+  background-color: #b6d4bb;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120px;
+  display: flex;
+  padding: 3rem;
+  margin-top: 0rem;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-/* estilos main */
+.footer-logo {
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+
+.footer-p {
+  text-align: right;
+  vertical-align: middle;
+  margin-bottom: 0rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Main */
 .index-main {
   padding: 4rem;
   background-color: #fbf9f6;
@@ -251,50 +222,10 @@ a {
   padding-inline: 1rem;
 }
 
-/* estilos header About Us */
-.aboutUs-header {
-  background: linear-gradient(90deg, rgba(251, 249, 246, 0.9) 0%, rgba(251, 249, 246, 0.7) 40%, rgba(251, 249, 246, 0) 100%), url("../assets/img/paisaje.JPG");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 42rem;
-  padding: 4rem;
-  padding-top: 6rem;
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #000000;
-}
-
-.h2-aboutUs-header {
-  font-family: "Eagle Lake", serif;
-  color: #89a46f;
-  font-size: 3rem;
-  margin-bottom: 5rem;
-  margin-top: 2.5rem;
-  text-shadow: #302f1a 1px 1px 2px;
-}
-
-/* estilos About us main values*/
+/* Main About Us - values */
 .aboutus-section, .aboutUs-main-values, .visit-section, .contact-section, .loc-section {
   padding: 4rem 2rem;
   margin-top: 2rem;
-}
-
-.value-card {
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid #89a46f;
-  box-shadow: 0 2px 8px #302f1a;
-  background-color: #fbf9f6;
-  padding: 2rem;
-  margin-top: 4rem;
-  text-align: center;
-  width: 100%;
-  max-width: 20rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .h2-aboutUs-main {
@@ -309,57 +240,7 @@ a {
   justify-content: center;
 }
 
-/* estilos header Contact Us */
-.contactUs-header {
-  background: linear-gradient(90deg, rgba(251, 249, 246, 0.9) 0%, rgba(251, 249, 246, 0.7) 40%, rgba(251, 249, 246, 0) 100%), url("../assets/img/paisaje.JPG");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 42rem;
-  padding: 4rem;
-  padding-top: 6rem;
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #000000;
-}
-
-.h2-contactUs-header {
-  font-family: "Eagle Lake", serif;
-  color: #89a46f;
-  font-size: 3rem;
-  margin-bottom: 5rem;
-  margin-top: 2.5rem;
-  text-shadow: #302f1a 1px 1px 2px;
-}
-
-/* estilos book your room header */
-.book-header {
-  background: linear-gradient(90deg, rgba(251, 249, 246, 0.9) 0%, rgba(251, 249, 246, 0.7) 40%, rgba(251, 249, 246, 0) 100%), url("../assets/img/atardecer.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 42rem;
-  padding: 4rem;
-  padding-top: 6rem;
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #000000;
-}
-
-.h2-book-header {
-  font-family: "Eagle Lake", serif;
-  color: #89a46f;
-  font-size: 3rem;
-  margin-bottom: 5rem;
-  margin-top: 2.5rem;
-  text-shadow: #302f1a 1px 1px 2px;
-}
-
-/* estilos book your room main */
+/* Main Book Your Room */
 .h2-book-main {
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -371,62 +252,8 @@ a {
   background-color: #fbf9f6;
 }
 
-/* estilos book your room section */
-.bookyourroom-section {
-  padding: 4rem;
-  background-color: #fbf9f6;
-}
-
-.h2-bookyourroom-section {
-  font-size: 2rem;
-  text-align: center;
-}
-
-/* estilos location con mapa */
-.loc-section {
-  background-color: #fbf9f6;
-  margin: 0;
-  padding: 0;
-}
-.loc-section__info {
-  padding: 3rem;
-}
-.loc-section__map {
-  width: 100%;
-  height: 100%;
-}
-.loc-section__map iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 300px;
-  border: 0;
-  display: block;
-}
-
-/* estilos footer */
-.footer {
-  background: url("../assets/img/logo-footer.png");
-  background-color: #b6d4bb;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 3rem;
-  margin-top: 0rem;
-  font-size: 0.9rem;
-  align-items: center;
-}
-
-.footer-logo {
-  width: 2.5rem;
-  margin-right: 1rem;
-}
-
-.footer-p {
-  text-align: right;
-  vertical-align: middle;
-  margin-bottom: 0rem;
-}
-
-/* responsive */
+/* Media Queries */
+/* Responsive */
 @media (max-width: 1024px) {
   .container-fluid {
     padding: 9.6px 32px;
@@ -518,6 +345,170 @@ a {
   .hero-buttons button {
     width: 100%;
   }
+}
+@media (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    background-position: top center;
+    background-size: 90px;
+    margin-top: 2rem;
+  }
+  .footer-p {
+    text-align: center;
+  }
+}
+/* Components */
+/* Header botones */
+.header-btn.learn {
+  background-color: #302f1a;
+  color: #fbf9f6;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  border: #302f1a 1.3px solid;
+  border-radius: 20px;
+  text-align: center;
+}
+.header-btn.book {
+  background-color: rgba(213, 204, 190, 0);
+  color: #302f1a;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  border: #302f1a 1.3px solid;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.index-header button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Hero botones */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Cards - Main index */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  padding: 5rem;
+}
+
+.card {
+  background-color: #fbf9f6;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #89a46f;
+  box-shadow: 0 2px 8px #302f1a;
+  width: 100%;
+  max-width: 45rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #89a46f;
+  text-align: center;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+/* Cards - Main About Us */
+.aboutUs-header-card {
+  background-color: #fbf9f6;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #89a46f;
+  box-shadow: 0 2px 8px #302f1a;
+  padding: 2rem;
+  margin-top: 4rem;
+  text-align: justify;
+}
+
+/* Cards - About Us - Values */
+.value-card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #89a46f;
+  box-shadow: 0 2px 8px #302f1a;
+  background-color: #fbf9f6;
+  padding: 2rem;
+  margin-top: 4rem;
+  text-align: center;
+  width: 100%;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.value-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Reset y variables: sin cambios ===== */
+* {
+  font-family: "Merriweather", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fbf9f6;
+}
+
+/* ===== Estilos generales ===== */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.custom-list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar.navbar-expand-lg {
+  background-color: #fbf9f6;
+}
+
+.nav-link {
+  color: #000000;
+}
+
+.container-fluid {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+  width: 7rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

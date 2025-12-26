@@ -1,0 +1,33 @@
+/* Footer */
+
+.footer{
+  background: url("../assets/img/logo-footer.png");
+  background-color: $secondary-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120px; 
+
+  display: flex;
+  padding: 3rem;
+  margin-top: 0rem;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-logo{
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.footer-p{
+    text-align: right;
+    vertical-align: middle;
+    margin-bottom: 0rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}

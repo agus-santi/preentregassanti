@@ -1,0 +1,26 @@
+/* Header botones */
+
+.header-btn {
+
+    &.learn {
+        @include button-base ($text-color, $background-color, $text-color);
+    }
+
+    &.book {
+        @include button-base ($transparent, $text-color, $text-color);
+    }
+}
+
+.index-header button{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+/* Hero botones */
+
+.hero-buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
