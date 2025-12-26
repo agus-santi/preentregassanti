@@ -75,17 +75,12 @@
   &__info {
     padding: 3rem;
   }
-
-  &__map {
-    width: 100%;
-    height: 100%;
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      min-height: 300px;
-      border: 0;
-      display: block;
-    }
-  }
 }
+
+.loc-section__map iframe {
+  width: 100%;
+  height: 400px; // desktop
+  border: 0;
+  display: block;
+}
+  
