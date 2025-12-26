@@ -1,0 +1,71 @@
+/* Cards - Main index */
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+.card {
+    @include card-base;
+    width: 100%;
+    max-width: 45rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.card-img-top {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0; 
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: $deco-color;
+    text-align: center;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+/* Cards - Main About Us */
+
+.aboutUs-header-card {
+    @include card-base ($background-color);
+    padding: 2rem;
+    margin-top: 4rem;
+    text-align: justify;
+}
+
+/* Cards - About Us - Values */
+.value-card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid $deco-color;
+    box-shadow: 0 2px 8px $text-color;
+    background-color: $background-color;
+    padding: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+    width: 100%;
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+}
