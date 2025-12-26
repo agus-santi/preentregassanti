@@ -6,19 +6,14 @@
   box-sizing: border-box;
 }
 
-:root {
-  --primary-color: #dce2ee;
-  --secondary-color: #b6d4bb;
-  --deco-color: #89a46f;
-  --text-color: #302f1a;
-  --background-color: #fbf9f6;
-  --colornegro: #000000;
+body {
+  background-color: #fbf9f6;
 }
 
 /* ===== Estilos generales ===== */
 a {
   text-decoration: none;
-  color: var(--colornegro);
+  color: #000000;
 }
 
 .custom-list {
@@ -29,11 +24,11 @@ a {
 
 /* Navbar */
 .navbar.navbar-expand-lg {
-  background-color: var(--background-color);
+  background-color: #fbf9f6;
 }
 
 .nav-link {
-  color: var(--colornegro);
+  color: #000000;
 }
 
 .container-fluid {
@@ -56,12 +51,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--colornegro);
+  color: #000000;
 }
 
 .h1-header {
   font-family: "Eagle Lake", serif;
-  color: var(--deco-color);
+  color: #89a46f;
   font-size: 3rem;
   margin-bottom: 5rem;
   margin-top: 2.5rem;
@@ -92,23 +87,23 @@ a {
 
 /* estilos botones */
 .header-btn.learn {
-  background-color: var(--text-color);
-  color: var(--background-color);
+  background-color: #302f1a;
+  color: #fbf9f6;
   font-weight: bold;
   font: 2em;
   padding: 0.5rem 0.8rem;
-  border: var(--text-color) 1.3px solid;
+  border: #302f1a 1.3px solid;
   border-radius: 20px;
   text-align: center;
 }
 
 .header-btn.book {
   background-color: rgba(213, 204, 190, 0);
-  color: var(--text-color);
+  color: #302f1a;
   font-weight: bold;
   font: 2em;
   padding: 0.5rem 0.8rem;
-  border: var(--text-color) 1.3px solid;
+  border: #302f1a 1.3px solid;
   border-radius: 20px;
 }
 
@@ -177,6 +172,12 @@ a {
   font-size: 0.9rem;
 }
 
+.about-us img {
+  border-radius: 20px;
+  height: 400px;
+  object-fit: cover;
+}
+
 /* estilos cards main index */
 .card-img-top {
   height: 240px;
@@ -188,11 +189,11 @@ a {
 .card {
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid var(--deco-color);
-  box-shadow: 0 2px 8px var(--text-color);
+  border: 1px solid #89a46f;
+  box-shadow: 0 2px 8px #302f1a;
   width: 100%;
   max-width: 45rem;
-  background-color: var(--background-color);
+  background-color: #fbf9f6;
 }
 
 .cards-container {
@@ -207,7 +208,7 @@ a {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: var(--deco-color);
+  color: #89a46f;
   text-align: center;
 }
 
@@ -219,8 +220,8 @@ a {
 .abotUs-header-card {
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid var(--deco-color);
-  box-shadow: 0 2px 8px var(--text-color);
+  border: 1px solid #89a46f;
+  box-shadow: 0 2px 8px #302f1a;
   background-color: rgba(251, 249, 246, 0.5921568627);
   padding: 2rem;
   margin-top: 4rem;
@@ -230,7 +231,7 @@ a {
 /* estilos main */
 .index-main {
   padding: 4rem;
-  background-color: var(--background-color);
+  background-color: #fbf9f6;
 }
 
 .h2-index-main {
@@ -241,11 +242,11 @@ a {
 .aboutUs-main {
   padding: 4rem;
   text-align: center;
-  background-color: var(--background-color);
+  background-color: #fbf9f6;
 }
 
 .experiences-main {
-  background-color: var(--background-color);
+  background-color: #fbf9f6;
   padding-top: 4rem;
   padding-inline: 1rem;
 }
@@ -263,12 +264,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--colornegro);
+  color: #000000;
 }
 
 .h2-aboutUs-header {
   font-family: "Eagle Lake", serif;
-  color: var(--deco-color);
+  color: #89a46f;
   font-size: 3rem;
   margin-bottom: 5rem;
   margin-top: 2.5rem;
@@ -284,9 +285,9 @@ a {
 .value-card {
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid var(--deco-color);
-  box-shadow: 0 2px 8px var(--text-color);
-  background-color: var(--background-color);
+  border: 1px solid #89a46f;
+  box-shadow: 0 2px 8px #302f1a;
+  background-color: #fbf9f6;
   padding: 2rem;
   margin-top: 4rem;
   text-align: center;
@@ -308,6 +309,31 @@ a {
   justify-content: center;
 }
 
+/* estilos header Contact Us */
+.contactUs-header {
+  background: linear-gradient(90deg, rgba(251, 249, 246, 0.9) 0%, rgba(251, 249, 246, 0.7) 40%, rgba(251, 249, 246, 0) 100%), url("../assets/img/paisaje.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 42rem;
+  padding: 4rem;
+  padding-top: 6rem;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+}
+
+.h2-contactUs-header {
+  font-family: "Eagle Lake", serif;
+  color: #89a46f;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 2.5rem;
+  text-shadow: #302f1a 1px 1px 2px;
+}
+
 /* estilos book your room header */
 .book-header {
   background: linear-gradient(90deg, rgba(251, 249, 246, 0.9) 0%, rgba(251, 249, 246, 0.7) 40%, rgba(251, 249, 246, 0) 100%), url("../assets/img/atardecer.jpeg");
@@ -321,12 +347,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--colornegro);
+  color: #000000;
 }
 
 .h2-book-header {
   font-family: "Eagle Lake", serif;
-  color: var(--deco-color);
+  color: #89a46f;
   font-size: 3rem;
   margin-bottom: 5rem;
   margin-top: 2.5rem;
@@ -342,41 +368,62 @@ a {
 }
 
 .container.my-5 {
-  background-color: var(--background-color);
+  background-color: #fbf9f6;
+}
+
+/* estilos book your room section */
+.bookyourroom-section {
+  padding: 4rem;
+  background-color: #fbf9f6;
+}
+
+.h2-bookyourroom-section {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* estilos location con mapa */
+.loc-section {
+  background-color: #fbf9f6;
+  margin: 0;
+  padding: 0;
+}
+.loc-section__info {
+  padding: 3rem;
+}
+.loc-section__map {
+  width: 100%;
+  height: 100%;
+}
+.loc-section__map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  border: 0;
+  display: block;
 }
 
 /* estilos footer */
-.index-footer {
-  background-color: var(--primary-color);
-  padding: 4rem;
-  margin-top: 2rem;
+.footer {
+  background: url("../assets/img/logo-footer.png");
+  background-color: #b6d4bb;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3rem;
+  margin-top: 0rem;
   font-size: 0.9rem;
+  align-items: center;
 }
 
-.logo-ig {
+.footer-logo {
   width: 2.5rem;
   margin-right: 1rem;
 }
 
-.logo-lk {
-  width: 2.5rem;
-  margin-right: 1rem;
-}
-
-.p-footer {
+.footer-p {
   text-align: right;
-}
-
-.aboutUs-footer {
-  background-color: rgba(184, 206, 234, 0.5333333333);
-  padding: 4rem;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
-
-footer {
-  padding: 2rem 0;
-  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 0rem;
 }
 
 /* responsive */
@@ -428,6 +475,15 @@ footer {
   }
   .navbar-brand img {
     width: 6rem;
+  }
+  .loc-section {
+    grid-template-columns: 1fr;
+  }
+  .loc-section__info {
+    padding: 2rem;
+  }
+  .loc-section__map iframe {
+    min-height: 250px;
   }
 }
 @media (max-width: 576px) {

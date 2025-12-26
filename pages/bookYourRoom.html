@@ -54,86 +54,174 @@
       <h2 class="h2-book-header">Book Your Room</h2>
     </header>
 
-<main class="container my-5">
-  <h2 class="h2-book-main text-center mb-4">Complete the form</h2>
+    <section class="bookyourroom-section">
 
-  <div class="row justify-content-center">
-    <div class="col-12 col-lg-8">
+      <h2 class="h2-bookyourroom-section">Our Rooms</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+          <div class="col">
+            <div class="card">
+              <img src="../assets/img/first-room.jpg" class="card-img-top" alt="First room">
+              <div class="card-body">
+                <h5 class="card-title">Country View Room</h5>
+                <p class="card-text">A cozy countryside escape surrounded by peaceful landscapes, soft natural light, and warm rustic details. Ideal for guests seeking a quiet retreat, it offers serenity, comfort, and a sense of grounding connection with nature. Perfect for unwinding, reading, or simply breathing fresh countryside air.</p>
+              </div>
+            </div>
+          </div>
 
-      <form class="p-4 shadow rounded">
+          <div class="col">
+            <div class="card">
+              <img src="../assets/img/third-room.jpg" class="card-img-top" alt="Third room">
+              <div class="card-body">
+                <h5 class="card-title">Ocean View Room</h5>
+                <p class="card-text">A bright and refreshing room overlooking expansive ocean horizons, where gentle waves and coastal breezes create the perfect relaxing atmosphere. With soft colors, natural textures, and calming decor, it invites guests to disconnect, recharge, and enjoy the timeless charm of a peaceful seaside stay.</p>
+              </div>
+            </div>
+          </div>
 
-        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="../assets/img/second-room.jpg" class="card-img-top" alt="Second room">
+              <div class="card-body">
+                <h5 class="card-title">Garden Retreat Room</h5>
+                <p class="card-text">A charming botanical haven surrounded by lush greenery, natural scents, and soft filtered sunlight. Thoughtfully designed for guests who love tranquility, this space blends comfort with a soothing nature-inspired ambiance. Ideal for resting deeply, reflecting quietly, or enjoying a peaceful slow morning among plants.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <!-- COLUMNA IZQUIERDA -->
-          <div class="col-12 col-md-6">
+      </section>
 
-            <div class="mb-3">
-              <label for="date" class="form-label">Select your date</label>
-              <input type="date" class="form-control" id="date" required>
+  <main class="container my-5">
+    <h2 class="h2-book-main text-center mb-4">Complete the form</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+
+        <form class="p-4 shadow rounded">
+
+          <div class="row">
+
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="col-12 col-md-6">
+
+              <div class="mb-3">
+                <label for="date" class="form-label">Select your date</label>
+                <input type="date" class="form-control" id="date" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="guests" class="form-label">How many guests?</label>
+                <input type="number" class="form-control" id="guests" min="1" max="10" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="roomType" class="form-label">Choose your room</label>
+                <select class="form-select" id="roomType" required>
+                  <option selected disabled>Select a room</option>
+                  <option>Country View Room</option>
+                  <option>Ocean View Room</option>
+                  <option>Garden Retreat Room</option>
+                </select>
+              </div>
+
             </div>
 
-            <div class="mb-3">
-              <label for="guests" class="form-label">How many guests?</label>
-              <input type="number" class="form-control" id="guests" min="1" max="10" required>
+            <!-- COLUMNA DERECHA -->
+            <div class="col-12 col-md-6">
+
+              <div class="mb-3">
+                <label for="fullname" class="form-label">Full name</label>
+                <input type="text" class="form-control" id="fullname" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="experience" class="form-label">Select an experience (optional)</label>
+                <select class="form-select" id="experience">
+                  <option selected disabled>Select an experience</option>
+                  <option>Wedding</option>
+                  <option>Picnic Day</option>
+                  <option>Team Building</option>
+                  <option>No experience</option>
+                </select>
+              </div>
+
             </div>
 
-            <div class="mb-3">
-              <label for="roomType" class="form-label">Choose your room</label>
-              <select class="form-select" id="roomType" required>
-                <option selected disabled>Select a room</option>
-                <option>Country View Room</option>
-                <option>Ocean View Room</option>
-                <option>Garden Retreat Room</option>
-              </select>
+            <!-- BOTÓN -->
+            <div class="col-12 mt-3">
+              <button type="submit" class="btn btn-dark w-100 py-2">
+                Book Now
+              </button>
             </div>
 
           </div>
+        </form>
 
-          <!-- COLUMNA DERECHA -->
-          <div class="col-12 col-md-6">
+      </div>
+    </div>
+  </main>
 
+    <section class="contact-section container my-5">
+      <div class="row align-items-start">
+
+        <!-- Texto -->
+        <div class="col-md-6">
+          <h3>Do you have any questions?</h3>
+          <p>Do not hesitate to contact us.</p>
+        </div>
+
+        <!-- Formulario -->
+        <div class="col-md-6">
+          <form class="contact-form">
             <div class="mb-3">
-              <label for="fullname" class="form-label">Full name</label>
-              <input type="text" class="form-control" id="fullname" required>
+              <input type="text" class="form-control" placeholder="Full name">
             </div>
 
             <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" required>
+              <input type="email" class="form-control" placeholder="Email address">
             </div>
 
             <div class="mb-3">
-              <label for="experience" class="form-label">Select an experience (optional)</label>
-              <select class="form-select" id="experience">
-                <option selected disabled>Select an experience</option>
-                <option>Wedding</option>
-                <option>Picnic Day</option>
-                <option>Team Building</option>
-                <option>No experience</option>
-              </select>
+              <textarea class="form-control" rows="4" placeholder="Message"></textarea>
             </div>
 
+            <button type="submit" class="btn btn-dark">Send</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="loc-section">
+      <div class="location container">
+        <div class="row align-items-center">
+          <div class="col-md-6 location-info">
+            <h2>Where are we?</h2>
+            <p>Valle del Hilo de la Vida</p>
+            <p>5 Elm St, New Milford, CT 06776, USA</p>
           </div>
 
-          <!-- BOTÓN -->
-          <div class="col-12 mt-3">
-            <button type="submit" class="btn btn-dark w-100 py-2">
-              Book Now
-            </button>
+          <div class="col-md-6 location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.397252855108!2d-55.2365625!3d-34.4420625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x950ab0c6fb88143d%3A0xd90ee0e09c052825!2sValle%20del%20Hilo%20de%20la%20Vida!5e0!3m2!1ses-419!2suy!4v1766702358648!5m2!1ses-419!2suy" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
 
         </div>
-      </form>
+      </div>
+    </section>
 
-    </div>
-  </div>
-</main>
 
-    <footer class="index-footer">
-        <a href="https://www.instagram.com/agus._santi/" target="_blank"><img class="logo-ig" src="../assets/img/instgramlogo.png" alt="instagram logo">
+    <footer class="footer">
+        <a href="https://www.instagram.com/agus._santi/" target="_blank"><img class="footer-logo" src="../assets/img/instgramlogo.png" alt="instagram logo">
         </a>
-        <a href="https://www.linkedin.com/in/agustina-santi-017089240/" target="_blank"><img class="logo-lk" src="../assets/img/linkedinlogo.png" alt="Linkedin logo"></a>
-        <p class="p-footer">All rigths reserved &copy; | Dragonfly Inn</p>
+        <a href="https://www.linkedin.com/in/agustina-santi-017089240/" target="_blank"><img class="footer-logo" src="../assets/img/linkedinlogo.png" alt="Linkedin logo"></a>
+        <p class="footer-p">All rigths reserved &copy; | Dragonfly Inn</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
