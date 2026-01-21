@@ -1,5 +1,5 @@
 /* Utilities */
-.book-header .h2-book-header, .contactUs-header .h2-contactUs-header, .aboutUs-header .h2-aboutUs-header, .index-header .h1-header {
+.book-header .h1-book-header, .contactUs-header .h1-contactUs-header, .aboutUs-header .h1-aboutUs-header, .index-header .h1-header {
   font-family: "Eagle Lake", serif;
   color: #89a46f;
   margin-bottom: 5rem;
@@ -56,6 +56,10 @@
   justify-content: center;
   color: #000000;
 }
+.aboutUs-header .h1-aboutUs-header-specialfont {
+  font-family: "Geostar";
+}
+
 /* Header Contact Us */
 .contactUs-header {
   background: linear-gradient(90deg, rgba(251, 249, 246, 0.9) 0%, rgba(251, 249, 246, 0.7) 40%, rgba(251, 249, 246, 0) 100%), url("../assets/img/paisaje.JPG");

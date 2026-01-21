@@ -38,8 +38,12 @@
 .aboutUs-header {
   @include hero-header ("../assets/img/paisaje.JPG");
 
-    .h2-aboutUs-header{
+    .h1-aboutUs-header{
         @extend %headerTitulo;
+        &-specialfont {
+            font-family: "Geostar";
+        }        
+
     }
 }
 
@@ -48,7 +52,7 @@
 .contactUs-header {
   @include hero-header ("../assets/img/paisaje.JPG");
 
-  .h2-contactUs-header{
+  .h1-contactUs-header{
     @extend %headerTitulo;
   }
 }
@@ -58,7 +62,7 @@
 .book-header {
     @include hero-header ("../assets/img/atardecer.jpeg");
 
-    .h2-book-header{
+    .h1-book-header{
      @extend %headerTitulo;
     }
 }
